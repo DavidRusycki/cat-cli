@@ -1,11 +1,16 @@
 {
   "name": "cat-cli",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "bin": {
-    "cat-cli": "./index.ts"
+    "cat-cli": "./src/index.ts"
   },
   "type": "module",
   "private": true,
+  "scripts": {
+    "register": "bun link && bun link cat-cli",
+    "start": "bun cat-cli",
+    "build:project": "tsc"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/chalk": "^2.2.4",
