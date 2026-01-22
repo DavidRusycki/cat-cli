@@ -1,0 +1,19 @@
+{
+  "name": "cat-cli",
+  "module": "index.ts",
+  "bin": {
+    "cat-cli": "./index.ts"
+  },
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/commander": "^2.12.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  }
+}
